@@ -1,0 +1,249 @@
+Request method:	GET
+Request URI:	https://api.ratesapi.io/api/latest
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 13 Oct 2020 18:22:22 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: __cfduid=d7fe78b255489f339229354a080ce01d61602613342; expires=Thu, 12-Nov-20 18:22:22 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax
+Vary: Accept-Encoding
+Access-Control-Allow-Methods: GET
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 5981
+cf-request-id: 05c4cc08310000ee03543b8200000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?lkg-colo=19&lkg-time=1602613342"}],"group":"cf-nel","max_age":604800}
+NEL: {"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 5e1b15ed1f61ee03-CDG
+
+{
+    "base": "EUR",
+    "rates": {
+        "GBP": 0.90591,
+        "HKD": 9.135,
+        "IDR": 17403.27,
+        "ILS": 3.9895,
+        "DKK": 7.4432,
+        "INR": 86.425,
+        "CHF": 1.0734,
+        "MXN": 25.0183,
+        "CZK": 27.356,
+        "SGD": 1.6007,
+        "THB": 36.676,
+        "HRK": 7.5785,
+        "MYR": 4.8822,
+        "NOK": 10.7923,
+        "CNY": 7.9388,
+        "BGN": 1.9558,
+        "PHP": 57.325,
+        "SEK": 10.343,
+        "PLN": 4.4851,
+        "ZAR": 19.4446,
+        "CAD": 1.545,
+        "ISK": 163.2,
+        "BRL": 6.5389,
+        "RON": 4.875,
+        "NZD": 1.7715,
+        "TRY": 9.3155,
+        "JPY": 124.38,
+        "RUB": 90.8041,
+        "KRW": 1351.0,
+        "USD": 1.1787,
+        "HUF": 360.2,
+        "AUD": 1.6403
+    },
+    "date": "2020-10-13"
+}
+Request method:	GET
+Request URI:	https://api.ratesapi.io/api/latessstttt
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Date: Tue, 13 Oct 2020 18:22:23 GMT
+Content-Type: application/json
+Content-Length: 68
+Connection: keep-alive
+Set-Cookie: __cfduid=d24d3f740f528c13049e6f74700b024331602613343; expires=Thu, 12-Nov-20 18:22:23 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax
+Access-Control-Allow-Methods: GET
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: *
+CF-Cache-Status: BYPASS
+cf-request-id: 05c4cc0e7e0000089ba9b82200000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?lkg-colo=19&lkg-time=1602613344"}],"group":"cf-nel","max_age":604800}
+NEL: {"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 5e1b15f73be8089b-CDG
+
+{
+    "error": "time data 'latessstttt' does not match format '%Y-%m-%d'"
+}
+Request method:	GET
+Request URI:	https://api.ratesapi.io/api/latest?base=USD&symbols=GBP
+Proxy:			<none>
+Request params:	<none>
+Query params:	base=USD
+				symbols=GBP
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 13 Oct 2020 18:22:24 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: __cfduid=d1404dff047a41d034ee47cbfa6f2aebb1602613344; expires=Thu, 12-Nov-20 18:22:24 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax
+Access-Control-Allow-Methods: GET
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: *
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 232
+cf-request-id: 05c4cc11450000cdd78e221200000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?lkg-colo=19&lkg-time=1602613345"}],"group":"cf-nel","max_age":604800}
+NEL: {"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 5e1b15fbac6acdd7-CDG
+Content-Encoding: gzip
+
+{
+    "base": "USD",
+    "rates": {
+        "GBP": 0.7685670654
+    },
+    "date": "2020-10-13"
+}
+Request method:	GET
+Request URI:	https://api.ratesapi.io/api/2020-10-13
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 13 Oct 2020 18:22:25 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: __cfduid=d8daa49078bba37f55efc848c01052ff11602613345; expires=Thu, 12-Nov-20 18:22:25 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax
+Vary: Accept-Encoding
+Access-Control-Allow-Methods: GET
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 232
+cf-request-id: 05c4cc13db000008a701149200000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?lkg-colo=19&lkg-time=1602613345"}],"group":"cf-nel","max_age":604800}
+NEL: {"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 5e1b15ffc83808a7-CDG
+
+{
+    "base": "EUR",
+    "rates": {
+        "GBP": 0.90591,
+        "HKD": 9.135,
+        "IDR": 17403.27,
+        "ILS": 3.9895,
+        "DKK": 7.4432,
+        "INR": 86.425,
+        "CHF": 1.0734,
+        "MXN": 25.0183,
+        "CZK": 27.356,
+        "SGD": 1.6007,
+        "THB": 36.676,
+        "HRK": 7.5785,
+        "MYR": 4.8822,
+        "NOK": 10.7923,
+        "CNY": 7.9388,
+        "BGN": 1.9558,
+        "PHP": 57.325,
+        "SEK": 10.343,
+        "PLN": 4.4851,
+        "ZAR": 19.4446,
+        "CAD": 1.545,
+        "ISK": 163.2,
+        "BRL": 6.5389,
+        "RON": 4.875,
+        "NZD": 1.7715,
+        "TRY": 9.3155,
+        "JPY": 124.38,
+        "RUB": 90.8041,
+        "KRW": 1351.0,
+        "USD": 1.1787,
+        "HUF": 360.2,
+        "AUD": 1.6403
+    },
+    "date": "2020-10-13"
+}
+Request method:	GET
+Request URI:	https://api.ratesapi.io/api/2020-ss-22
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Date: Tue, 13 Oct 2020 18:22:26 GMT
+Content-Type: application/json
+Content-Length: 67
+Connection: keep-alive
+Set-Cookie: __cfduid=d2c315594235949132896ef2a145c29f41602613345; expires=Thu, 12-Nov-20 18:22:25 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax
+Access-Control-Allow-Methods: GET
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: *
+CF-Cache-Status: BYPASS
+cf-request-id: 05c4cc1674000033257a8d4200000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?lkg-colo=19&lkg-time=1602613346"}],"group":"cf-nel","max_age":604800}
+NEL: {"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 5e1b1603eee23325-CDG
+
+{
+    "error": "time data '2020-ss-22' does not match format '%Y-%m-%d'"
+}
