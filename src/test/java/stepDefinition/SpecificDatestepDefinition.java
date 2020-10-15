@@ -66,7 +66,7 @@ public class SpecificDatestepDefinition extends Utils {
 
 	@When("User passes invalid date format in the request")
 	public void user_passes_invalid_date_format_in_the_request() {
-		response = res1.when().get("/2020-ss-22").then().extract().response();
+		response = res1.when().get(invalidDate).then().extract().response();
 		System.out.println(response.asString());
 
 	}
@@ -80,6 +80,8 @@ public class SpecificDatestepDefinition extends Utils {
 public void in_the_response_contains(String key, String expectedvalue) {
 	String actualValue = getJsonpath(response, key);
 	String actualval = actualValue.replaceAll("[\\[\\]]", "");
+	String expectedvalue1=expectedvalue+" "+invalidDate+" " +"does not match format '%Y-%m-%d'";
+	System.out.println(expectedvalue1);
 	assertTrue(actualval.contains(expectedvalue));
 	
 }

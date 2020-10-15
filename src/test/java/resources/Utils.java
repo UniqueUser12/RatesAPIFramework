@@ -19,7 +19,7 @@ public class Utils
 {
 	//logging is also implemented here at global level
 	public static RequestSpecification req;
-	
+	public static Properties prop;
 //here the logging file will be rewritten with each new test case execution
 	//so first check if req is null then only once log file will begenrated,
 	//if not null then too logging will happen inthe same file
@@ -39,7 +39,7 @@ public RequestSpecification requestSpecification() throws IOException
 }
 public static String getglobalValue(String key) throws IOException
 {
-	Properties prop=new Properties();
+	prop=new Properties();
 	FileInputStream fis=new FileInputStream("C:\\Users\\Asma\\java\\RatesAPIFramework\\src\\test\\java\\resources\\global.properties");
 	prop.load(fis);
 	return prop.getProperty(key);
@@ -53,4 +53,12 @@ public String getJsonpath(Response response,String key)
 	return js.get(key).toString();
 
 }
+
+	/*
+	 * public static String getReportConfigPath(){ String reportConfigPath =
+	 * prop.getProperty("reportConfigPath"); if(reportConfigPath!= null) return
+	 * reportConfigPath; else throw new
+	 * RuntimeException("Report Config Path not specified in the Configuration.properties file for the Key:reportConfigPath"
+	 * ); }
+	 */
 }

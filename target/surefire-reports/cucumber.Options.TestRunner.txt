@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: cucumber.Options.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.766 sec <<< FAILURE!
+Verify Latest Foreign Exchange Rates API(Validating RatesApi)  Time elapsed: 4.702 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<2020-10-1[5]> but was:<2020-10-1[3]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at stepDefinition.LatestForeignExchangestepDefinition.in_the_response_is_the(LatestForeignExchangestepDefinition.java:76)
+	at ?."date" in the response is the "2020-10-13"(file:///C:/Users/Asma/java/RatesAPIFramework/src/test/java/features/LatestForeignExchange.feature:9)
+

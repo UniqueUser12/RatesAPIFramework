@@ -1,0 +1,466 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-10-15T18:49:16.270Z",
+        "line": 3,
+        "name": "Verify Latest Foreign Exchange Rates API",
+        "description": "",
+        "id": "validating-ratesapi;verify-latest-foreign-exchange-rates-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1134961800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Latest Foreign Exchange Rates API",
+            "match": {
+              "location": "stepDefinition.LatestForeignExchangestepDefinition.Latest_Foreign_Exchange_Rates_API()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2114344400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Latest Foreign Exchange Rates API is available",
+            "match": {
+              "location": "stepDefinition.LatestForeignExchangestepDefinition.latest_Foreign_Exchange_Rates_API_is_available()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2992700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the api call is success with statuscode is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 43
+                }
+              ],
+              "location": "stepDefinition.LatestForeignExchangestepDefinition.the_api_call_is_success_with_statuscode_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 628320700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"base\" in response body is \"EUR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"base\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"EUR\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepDefinition.LatestForeignExchangestepDefinition.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "ratesList is not empty",
+            "match": {
+              "location": "stepDefinition.LatestForeignExchangestepDefinition.ratesList_is_not_empty()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c2020-10-1[5]\u003e but was:\u003c2020-10-1[6]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat stepDefinition.LatestForeignExchangestepDefinition.in_the_response_is_the_current_date(LatestForeignExchangestepDefinition.java:70)\r\n\tat ✽.\"date\" in the response is the current date(file:///C:/Users/Asma/java/RatesAPIFramework/src/test/java/features/LatestForeignExchange.feature:9)\r\n",
+              "duration": 54853500,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "\"date\" in the response is the current date",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"date\"",
+                  "offset": 0
+                }
+              ],
+              "location": "stepDefinition.LatestForeignExchangestepDefinition.in_the_response_is_the_current_date(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-15T18:49:20.301Z",
+        "line": 12,
+        "name": "Verify Negative scenario for Latest Foreign Exchange Rates API",
+        "description": "",
+        "id": "validating-ratesapi;verify-negative-scenario-for-latest-foreign-exchange-rates-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3990600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Latest Foreign Exchange Rates API",
+            "match": {
+              "location": "stepDefinition.LatestForeignExchangestepDefinition.Latest_Foreign_Exchange_Rates_API()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 514608200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Latest Foreign Exchange Rates API is incorrect",
+            "match": {
+              "location": "stepDefinition.LatestForeignExchangestepDefinition.latest_Foreign_Exchange_Rates_API_is_incorrect()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "response status code is 400",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 24
+                }
+              ],
+              "location": "stepDefinition.LatestForeignExchangestepDefinition.response_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 28927100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "\"error\" in response contains \"time data \u0027latessstttt\u0027 does not match format \u0027%Y-%m-%d\u0027\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"error\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"time data \u0027latessstttt\u0027 does not match format \u0027%Y-%m-%d\u0027\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepDefinition.LatestForeignExchangestepDefinition.in_response_contains(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-15T18:49:20.866Z",
+        "line": 18,
+        "name": "Verify Latest Foreign Exchange Rates API with symbol and base",
+        "description": "",
+        "id": "validating-ratesapi;verify-latest-foreign-exchange-rates-api-with-symbol-and-base",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 20945900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Latest Foreign Exchange Rates API",
+            "match": {
+              "location": "stepDefinition.LatestForeignExchangestepDefinition.Latest_Foreign_Exchange_Rates_API()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 350062200,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Latest Foreign Exchange Rates API is available with symbol and base",
+            "match": {
+              "location": "stepDefinition.LatestForeignExchangestepDefinition.latest_Foreign_Exchange_Rates_API_is_available_with_symbol_and_base()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the api call is success with statuscode is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 43
+                }
+              ],
+              "location": "stepDefinition.LatestForeignExchangestepDefinition.the_api_call_is_success_with_statuscode_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 15957800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "\"base\" is \"USD\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"base\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"USD\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinition.LatestForeignExchangestepDefinition.is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20942900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "response does contains rates.GBP",
+            "match": {
+              "location": "stepDefinition.LatestForeignExchangestepDefinition.response_does_contains_rates_GBP()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Validating RatesApi",
+    "description": "",
+    "id": "validating-ratesapi",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/LatestForeignExchange.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-10-15T18:49:21.282Z",
+        "line": 3,
+        "name": "Verify Specific Date Range Rates API",
+        "description": "",
+        "id": "validating-ratesapi;verify-specific-date-range-rates-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3988500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "SpecificDateRange API",
+            "match": {
+              "location": "stepDefinition.SpecificDatestepDefinition.specificdaterange_API()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 282247000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "SpecificDateRange is available",
+            "match": {
+              "location": "stepDefinition.SpecificDatestepDefinition.specificdaterange_is_available()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the statuscode is  200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 19
+                }
+              ],
+              "location": "stepDefinition.SpecificDatestepDefinition.the_statuscode_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 18945700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"base\"  is \"EUR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"base\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"EUR\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinition.SpecificDatestepDefinition.is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "ratesList is not empty",
+            "match": {
+              "location": "stepDefinition.LatestForeignExchangestepDefinition.ratesList_is_not_empty()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22941400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "\"date\" in the response is the the one passed in the request.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"date\"",
+                  "offset": 0
+                }
+              ],
+              "location": "stepDefinition.SpecificDatestepDefinition.in_the_response_is_the_the_one_passed_in_the_request(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-15T18:49:21.618Z",
+        "line": 12,
+        "name": "Verify Negative scenario for Specific Date Range Rates API",
+        "description": "",
+        "id": "validating-ratesapi;verify-negative-scenario-for-specific-date-range-rates-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2991400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "SpecificDateRange API",
+            "match": {
+              "location": "stepDefinition.SpecificDatestepDefinition.specificdaterange_API()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 515622400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User passes invalid date format in the request",
+            "match": {
+              "location": "stepDefinition.SpecificDatestepDefinition.user_passes_invalid_date_format_in_the_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the status code is 400",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 19
+                }
+              ],
+              "location": "stepDefinition.SpecificDatestepDefinition.the_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12966000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "\"error\" in the response contains \"time data\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"error\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"time data\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinition.SpecificDatestepDefinition.in_the_response_contains(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Validating RatesApi",
+    "description": "",
+    "id": "validating-ratesapi",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/SpecificDateApi.feature",
+    "tags": []
+  }
+]
